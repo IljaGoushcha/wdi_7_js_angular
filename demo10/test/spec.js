@@ -25,8 +25,13 @@ describe('demo page', function() {
     it('should have three users', function() {
         expect(demoPage.users.count()).toEqual(3);
     });
+<<<<<<< HEAD
 
     it('should add a local user', function() {
+=======
+    
+    it('should add a user', function() {
+>>>>>>> 8ef709cf85e245f01a50979fa56565d183770eb1
         expect(demoPage.users.count()).toEqual(3);
 
         demoPage.firstNameField.sendKeys('John');

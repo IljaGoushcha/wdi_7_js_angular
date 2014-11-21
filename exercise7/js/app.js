@@ -33,4 +33,18 @@ angular.module('Ex7').config(function($routeProvider) {
         });
 });
 
+angular.module('Ex7').directive('gaModal', function() {
+    return {
+        restrict: 'E',
+
+        transclude: true,
+
+        templateUrl: 'templates/modal.html',
+
+        scope: {
+            title: '@'
+        }
+    };
+});
+
 
